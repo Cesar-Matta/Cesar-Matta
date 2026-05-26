@@ -24,7 +24,7 @@ The intersection I occupy is rare: deep aviation domain expertise + quality syst
 
 ## Featured Project
 
-### AeroMetric SMS — Aviation Safety Management System
+### SAMARIA SMS — Aviation Safety Management System
 > AI-powered SMS platform that replaces manual incident reporting with an intelligent analysis pipeline.
 
 - Analyzes aviation incidents against ICAO / FAA / EASA / AS9100 regulatory corpus
@@ -44,7 +44,7 @@ The intersection I occupy is rare: deep aviation domain expertise + quality syst
 
 | Project | Description | Stack |
 |---|---|---|
-| [University ERP System](https://github.com/Cesar-Matta/university-erp-system) | Full ERP with O2C, P2P, Production Planning, QM & HR — multi-tenant | Next.js · Prisma · TypeScript |
+| [ERP System](https://github.com/Cesar-Matta/university-erp-system) | Full ERP with O2C, P2P, Production Planning, QM & HR — multi-tenant | Next.js · Prisma · TypeScript |
 | [Zefyrio Platform](https://github.com/Cesar-Matta/zefyrio-platform) | Aviation Weather & Drone Safety HUD — PWA with METAR, NOTAM, GO/NO-GO AI engine | TypeScript · Supabase · Next.js |
 | [Cybersecurity Platform](https://github.com/Cesar-Matta/cybersecurity-platform) | Phishing simulations, risk scoring & n8n automation | Node.js · React · Docker |
 | [ERP Simulation](https://github.com/Cesar-Matta/erp-simulation) | SAP-style ERP simulator — FI, SD, MM, PP, HCM modules with live cross-module state | React · Vite |
