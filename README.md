@@ -8,7 +8,7 @@
 
 Early AI adopter since ChatGPT (2023). Spent years mastering automation tools (Make, Zapier, n8n) before moving into full-stack AI engineering. Building production AI systems at [Nodyt](https://nodyt.com) since 2024.
 
-The intersection I occupy is rare: deep aviation domain expertise + quality systems knowledge (AS9100) + hands-on AI engineering. That combination is what AeroMetric SMS was built from.
+The intersection I occupy is rare: deep aviation domain expertise + quality systems knowledge (AS9100) + hands-on AI engineering. That combination is what SAMARIA was built from.
 
 ---
 
@@ -22,21 +22,38 @@ The intersection I occupy is rare: deep aviation domain expertise + quality syst
 
 ---
 
-## Featured Project
+## Featured Projects
+
+Source for SAMARIA and Askronos is private (client/production systems); each
+link below is a public case study documenting architecture, engineering
+decisions, and production status — not the code.
 
 ### SAMARIA SMS — Aviation Safety Management System
-> AI-powered SMS platform that replaces manual incident reporting with an intelligent analysis pipeline.
+> AI-powered SMS platform that replaces manual incident reporting with an intelligent, regulation-grounded analysis pipeline.
 
-- Analyzes aviation incidents against ICAO / FAA / EASA / AS9100 regulatory corpus
-- Multi-agent routing: Pilot, ATC, Maintenance, Weather, Ground Ops specialists
-- RAG with Pinecone over regulatory documents
-- Seeded with 189 real accidents from 2025 (Aviation Safety Network)
+- Analyzes aviation incidents against ICAO / FAA / EASA / AS9100 / Colombia RAC regulatory corpus
+- Multi-agent routing with Claude (Anthropic API) + RAG over Pinecone
+- Seeded with 189 real 2025 accidents (Aviation Safety Network)
 - Immutable audit trail with SHA-256 hash chain (AS9100D Clause 7.5)
-- Proactive Safety Recommendations via cross-incident pattern detection
+- Actor Profile Engine serving multiple operator types (MRO, flight schools, UAS/drone) from one codebase
+- CAPA effectiveness state machine + governed Safety Performance Indicators (SPI/SPT)
 
-**Stack:** Python · FastAPI · Claude (Anthropic) · Pinecone · PostgreSQL · SQLAlchemy
+**Stack:** Python · FastAPI · Claude (Anthropic) · Pinecone · PostgreSQL (RLS) · Google Cloud Run
 
-[View Project](https://github.com/Cesar-Matta/aviation-safety-agent)
+[Case study](https://github.com/Cesar-Matta/samaria-case-study)
+
+### Askronos — Flight School Operations Platform (Colombia)
+> Multi-tenant SaaS covering what generic logbook tools miss: Colombian RAC 61.120/141, SIGA, and MIP dispatch.
+
+- 7-role operating model: Student, Instructor, Dispatcher, Admin, Accounting, Maintenance, Super Admin
+- Digital-signature flight records as the legally-binding critical path
+- Fleet/maintenance squawk tracking gating dispatch on airworthiness
+- Formal role & permission governance across 42 screens, migrated behind a compatibility shim
+- Load-tested with k6 against a synthetic dataset before scaling claims
+
+**Stack:** Next.js 16 · React 19 · TypeScript · Prisma · PostgreSQL · Google Cloud Run
+
+[Case study](https://github.com/Cesar-Matta/askronos-case-study)
 
 ---
 
@@ -44,10 +61,10 @@ The intersection I occupy is rare: deep aviation domain expertise + quality syst
 
 | Project | Description | Stack |
 |---|---|---|
-| [ERP System](https://github.com/Cesar-Matta/university-erp-system) | Full ERP with O2C, P2P, Production Planning, QM & HR — multi-tenant | Next.js · Prisma · TypeScript |
 | [Zefyrio Platform](https://github.com/Cesar-Matta/zefyrio-platform) | Aviation Weather & Drone Safety HUD — PWA with METAR, NOTAM, GO/NO-GO AI engine | TypeScript · Supabase · Next.js |
+| [TokenPilot](https://github.com/Cesar-Matta/tokenpilot-gpt-5-6) | Portable model-routing policy + optional API gateway for GPT-5.6 Luna/Terra/Sol | Python |
+| [ERP System](https://github.com/Cesar-Matta/multi-erp-system-pro) | Full ERP with O2C, P2P, Production Planning, QM & HR — multi-tenant | Next.js · Prisma · TypeScript |
 | [Cybersecurity Platform](https://github.com/Cesar-Matta/cybersecurity-platform) | Phishing simulations, risk scoring & n8n automation | Node.js · React · Docker |
-| [ERP Simulation](https://github.com/Cesar-Matta/erp-simulation) | SAP-style ERP simulator — FI, SD, MM, PP, HCM modules with live cross-module state | React · Vite |
 
 ---
 
