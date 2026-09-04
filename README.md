@@ -22,6 +22,32 @@ The intersection I occupy is rare: deep aviation domain expertise + quality syst
 
 ---
 
+## The aviation safety stack I've built
+
+Three independent, production systems — each shipped solo, each covering a
+different layer of the same real-world workflow: decide whether to fly, run
+the operation, learn from what goes wrong.
+
+```mermaid
+flowchart LR
+    subgraph L1["🌦️ Pre-Flight Risk"]
+        Z["Zefyrio<br/>Weather + airspace HUD<br/>GO / CAUTION / NO-GO engine"]
+    end
+    subgraph L2["📋 Flight Operations"]
+        A["Askronos<br/>Flight-school ops SaaS<br/>Dispatch · training · digital logbook"]
+    end
+    subgraph L3["🛡️ Safety Intelligence"]
+        S["SAMARIA<br/>AI incident analysis<br/>SMS · CAPA · regulatory compliance"]
+    end
+
+    L1 -.same domain, independent systems.- L2 -.same domain, independent systems.- L3
+```
+
+Public case studies for SAMARIA and Askronos below — both live in production,
+both proprietary codebases.
+
+---
+
 ## Featured Projects
 
 Source for SAMARIA and Askronos is private (client/production systems); each
